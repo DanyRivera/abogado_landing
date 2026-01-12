@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from 'next/image'
-import LogoIcon from '../../public/logo-2.svg';
+import LogoIcon from '../../public/logo-abogado.svg';
 
 const Hero = () => {
 

@@ -8,17 +8,45 @@ const Hero = () => {
 
     const [showMenuMobil, setShowMenuMobil] = useState(false);
     const [menuIsAmount, setMenuIsAmount] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+    let timeoutId = null;
 
     useEffect(() => {
         if (showMenuMobil) setMenuIsAmount(true);
     }, [showMenuMobil])
 
+    // Detectar scroll
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
     const handleCloseMenu = () => {
         setShowMenuMobil(false);
-        setTimeout(() => {
+
+        // Cancelar el timeout anterior si existe
+        if (timeoutId) clearTimeout(timeoutId);
+
+        timeoutId = setTimeout(() => {
             setMenuIsAmount(false);
         }, 500);
-    }
+    };
+
+    const handleOpenMenu = () => {
+        // Cancelar cualquier timeout previo
+        if (timeoutId) clearTimeout(timeoutId);
+
+        setShowMenuMobil(true);
+        setMenuIsAmount(true); // Mostrar inmediatamente
+    };
 
     // const handleClickMenuMobil = (element, offset) => {
     //     setShowMenuMobil(false);
@@ -39,7 +67,10 @@ const Hero = () => {
 
             <header className='hero'>
                 <section className='hero-content'>
-                    <nav className='bg-[#b0a884af] p-3 flex justify-between items-center fixed w-full'>
+                    <nav className={`p-3 flex justify-between items-center fixed w-full transition-colors duration-300 ${scrolled
+                            ? 'bg-secondary'
+                            : 'bg-[#b0a884af]'
+                        }`}>
                         <div className='flex gap-3'>
                             <Image src={LogoIcon} width={50} height={50} alt='Logo' />
                             <div className='flex flex-col justify-center items-center uppercase'>
@@ -47,7 +78,7 @@ const Hero = () => {
                                 <p className='font-bold text-[#f5f2f0e8]'>Dany Rivera</p>
                             </div>
                         </div>
-                        <div onClick={() => setShowMenuMobil(true)}>
+                        <div onClick={handleOpenMenu}>
                             <svg xmlns="http://www.w3.org/2000/svg" color='#f5f2f0b9' fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-7">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
                             </svg>
@@ -55,7 +86,7 @@ const Hero = () => {
                     </nav>
                     <section className='flex h-screen items-center mx-5'>
                         <div className='flex flex-col gap-3 '>
-                            <h1 className='text-tertiary font-bold text-5xl uppercase leading-14'>Grupo Dany Rivera <br /> <span className='text-secondary font-light '>Asesoría Legal y Soluciones Jurídicas</span></h1>
+                            <h1 className='text-tertiary font-bold text-4xl uppercase leading-10'>Grupo Dany Rivera <br /> <span className='text-secondary font-light '>Asesoría Legal y Soluciones Jurídicas</span></h1>
                             <div className='flex flex-col gap-10'>
                                 <p className='text-tertiary text-base'>
                                     En Grupo Dany Rivera, nos dedicamos a proteger tus intereses con soluciones jurídicas efectivas y personalizadas. Contamos con un equipo de profesionales del derecho altamente calificados, comprometidos con brindarte una atención cercana, ágil y eficiente, adaptada a tus necesidades.
@@ -70,6 +101,25 @@ const Hero = () => {
                     </section>
                 </section>
             </header>
+
+            <div>ok</div>
+            <div>ok</div>
+            <div>ok</div>
+            <div>ok</div>
+            <div>ok</div>
+            <div>ok</div>
+            <div>ok</div>
+            <div>ok</div>
+            <div>ok</div>
+            <div>ok</div>
+            <div>ok</div>
+            <div>ok</div>
+            <div>ok</div>
+            <div>ok</div>
+            <div>ok</div>
+            <div>ok</div>
+            <div>ok</div>
+            <div>ok</div>
 
             {menuIsAmount && (
                 <section className={`absolute z-30 h-full w-full top-0 bg-[#2f1d0e] px-7 py-10 ${showMenuMobil ? 'menu-visible' : 'menu-hidden'}`}>

@@ -67,12 +67,14 @@ const Hero = () => {
 
             <header className='hero'>
                 <section className='hero-content'>
-                    <nav className={`p-3 flex justify-between items-center fixed w-full transition-colors duration-300 ${scrolled
+                    <nav className={`md:hidden p-3 flex justify-between items-center fixed w-full transition-colors duration-300 ${scrolled
                         ? 'bg-secondary'
                         : 'bg-[#b0a884af]'
                         }`}>
-                        <div className='flex gap-3'>
+                        <div className=''>
                             <Image src={LogoIcon} width={50} height={50} alt='Logo' />
+                        </div>
+                        <div>
                             <div className='flex flex-col justify-center items-center uppercase'>
                                 <p className='tracking-widest text-tertiary'>Grupo</p>
                                 <p className='font-bold text-tertiary'>Dany Rivera</p>
@@ -84,16 +86,48 @@ const Hero = () => {
                             </svg>
                         </div>
                     </nav>
-                    <section className='flex h-screen items-center mx-5'>
+                    <nav className="hidden md:flex items-center justify-between mx-20 mt-10">
+                        <div>
+                            <div className='flex gap-3'>
+                                <Image src={LogoIcon} width={60} height={60} alt='Logo' />
+                                <div className='flex flex-col justify-center items-center uppercase'>
+                                    <p className='tracking-widest text-tertiary text-2xl'>Grupo</p>
+                                    <p className='font-bold text-tertiary text-2xl'>Dany Rivera</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <ul className="flex gap-10 uppercase text-tertiary">
+                                <li>Nosotros</li>
+                                <li>Casos</li>
+                                <li>Servicios</li>
+                                <li>Contacto</li>
+                            </ul>
+                        </div>
+                        <div className="">
+                            <div className="flex items-center gap-5">
+                                <div className="relative">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 absolute bottom-3 left-3 text-tertiary">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                                    </svg>
+                                    <input className="outline-none border-2 text-white border-tertiary pl-10 pr-3 py-3 text-base rounded-full" type="search" placeholder="Buscar..." />
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 text-tertiary">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </nav>
+                    <section className='flex h-screen items-center mx-5 md:mx-20 md:w-1/2 md:pb-34'>
                         <div className='flex flex-col gap-3 '>
-                            <h1 className='text-tertiary font-bold text-4xl uppercase leading-10'>Grupo Dany Rivera <br /> <span className='text-secondary font-light '>Asesoría Legal y Soluciones Jurídicas</span></h1>
+                            <h1 className='text-tertiary font-bold text-4xl uppercase leading-10 md:text-6xl md:leading-15'>Grupo Dany Rivera <br /> <span className='text-secondary font-bold'>Asesoría Legal y Soluciones Jurídicas</span></h1>
                             <div className='flex flex-col gap-10'>
-                                <p className='text-tertiary text-base'>
+                                <p className='text-tertiary text-sm md:text-base md:w-2/3'>
                                     En Grupo Dany Rivera, nos dedicamos a proteger tus intereses con soluciones jurídicas efectivas y personalizadas. Contamos con un equipo de profesionales del derecho altamente calificados, comprometidos con brindarte una atención cercana, ágil y eficiente, adaptada a tus necesidades.
                                 </p>
                                 <div>
                                     <button
-                                        className='bg-secondary text-tertiary py-4 px-7 font-bold rounded uppercase text-sm tracking-wider'
+                                        className='bg-secondary text-tertiary py-4 px-7 font-bold  uppercase text-sm tracking-wider rounded-full'
                                     >Contactanos</button>
                                 </div>
                             </div>
@@ -164,9 +198,6 @@ const Hero = () => {
                 </section>
             )}
         </>
-
-
-
     )
 }
 

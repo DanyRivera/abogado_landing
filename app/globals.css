@@ -19,7 +19,7 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
-  border-bottom-left-radius: 200px;
+  /* border-bottom-left-radius: 200px; */
 }
 
 .hero::before {
@@ -31,7 +31,7 @@
   height: 100%;
   background: linear-gradient(to right,
       rgba(0, 0, 0, 0.8) 0%,
-      rgba(0, 0, 0, 0.5) 70%,
+      rgba(0, 0, 0, 0.5) 100%,
       transparent 100%);
   pointer-events: none;
   z-index: 1;

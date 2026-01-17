@@ -72,7 +72,7 @@ const Hero = () => {
                         : 'bg-[#b0a884af]'
                         }`}>
                         <div className=''>
-                            <Image src={LogoIcon} width={50} height={50} alt='Logo' />
+                            <Image src={LogoIcon} width={35} height={35} alt='Logo' />
                         </div>
                         <div>
                             <div className='flex flex-col justify-center items-center uppercase'>
@@ -135,25 +135,6 @@ const Hero = () => {
                     </section>
                 </section>
             </header>
-
-            <div>ok</div>
-            <div>ok</div>
-            <div>ok</div>
-            <div>ok</div>
-            <div>ok</div>
-            <div>ok</div>
-            <div>ok</div>
-            <div>ok</div>
-            <div>ok</div>
-            <div>ok</div>
-            <div>ok</div>
-            <div>ok</div>
-            <div>ok</div>
-            <div>ok</div>
-            <div>ok</div>
-            <div>ok</div>
-            <div>ok</div>
-            <div>ok</div>
 
             {menuIsAmount && (
                 <section className={`fixed z-30 h-full w-full top-0 text-tertiary bg-secondary px-7 py-10 ${showMenuMobil ? 'menu-visible' : 'menu-hidden'}`}>

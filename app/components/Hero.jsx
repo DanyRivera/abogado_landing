@@ -122,7 +122,7 @@ const Hero = () => {
                         <div className='flex flex-col gap-3 '>
                             <h1 className='text-tertiary font-bold text-4xl uppercase leading-10 md:text-6xl md:leading-15'>Grupo Dany Rivera <br /> <span className='text-secondary font-bold'>Asesoría Legal y Soluciones Jurídicas</span></h1>
                             <div className='flex flex-col gap-10'>
-                                <p className='text-tertiary text-sm md:text-base md:w-2/3'>
+                                <p className='text-tertiary text-sm md:text-base w-7/8 md:w-2/3'>
                                     En Grupo Dany Rivera, nos dedicamos a proteger tus intereses con soluciones jurídicas efectivas y personalizadas. Contamos con un equipo de profesionales del derecho altamente calificados, comprometidos con brindarte una atención cercana, ágil y eficiente, adaptada a tus necesidades.
                                 </p>
                                 <div>

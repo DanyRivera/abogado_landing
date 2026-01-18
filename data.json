@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Rebeca Philips",
+    "work": "Abogado Civil",
+    "image": "a-5"
+  },
+  {
+    "name": "John Doe",
+    "work": "Abogado Mercantil",
+    "image": "a-2"
+  },
+  {
+    "name": "Jane Smith",
+    "work": "Abogado Penal",
+    "image": "a-3"
+  },
+  {
+    "name": "Carlos López",
+    "work": "Abogado Fiscal",
+    "image": "a-1"
+  },
+  {
+    "name": "Alicia Gómez",
+    "work": "Litigante",
+    "image": "a-4"
+  },
+  {
+    "name": "William Johnson",
+    "work": "Notario Público",
+    "image": "a-6"
+  },
+    {
+    "name": "Dany Rivera",
+    "work": "Notario Público",
+    "image": "a-7"
+  },
+    {
+    "name": "Andrea González",
+    "work": "Notario Público",
+    "image": "a-8"
+  }
+]

@@ -4,7 +4,7 @@ import LogoIcon from '../../public/logo-abogado.svg';
 const Footer = () => {
     return (
         <footer className='bg-primary mt-20 pt-12'>
-            <div className='flex justify-between items-center mx-10 mb-10 gap-5 '>
+            <div className='flex justify-between items-center mx-10 md:mx-20 mb-10 gap-5 '>
                 <div className='flex flex-col items-center md:flex-row md:gap-2'>
                     <Image src={LogoIcon} width={50} height={50} alt='Logo' />
                     <p className='tracking-widest text-tertiary text-md uppercase mt-2 md:mt-0'>Grupo</p>

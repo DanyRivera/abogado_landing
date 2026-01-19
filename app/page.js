@@ -5,6 +5,7 @@ import Abogados from "./components/Abogados";
 import Services from "./components/Services";
 import Reviews from "./components/Reviews";
 import Cita from "./components/Cita";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Services />
       <Reviews />
       <Cita />
+      <Footer />
     </>
   );
 }

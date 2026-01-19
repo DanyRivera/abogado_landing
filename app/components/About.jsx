@@ -17,7 +17,7 @@ const About = () => {
 
       <div className="mx-5 flex flex-col gap-5 md:col-span-1 md:gap-10">
         <h2 className="text-4xl font-bold text-secondary md:text-6xl">Nuestra Amplía <br /> <span className="text-primary">Experiencia Jurídica</span></h2>
-        <p className="text-sm text-primary md:text-lg md:w-5/6">Con casi tres décadas en el mercado, ADVMARC Abogados y Soluciones ha acumulado una vasta experiencia jurídica que nos posiciona entre los despachos más respetados de América Latina. Desde 1995, hemos combinado conocimiento técnico, innovación y un profundo entendimiento de las complejidades del Derecho, atendiendo a clientes nacionales e internacionales en diversas áreas.</p>
+        <p className="text-sm text-primary md:text-lg md:w-5/6">Con casi tres décadas en el mercado, Grupo Rivera Abogados y Soluciones ha acumulado una vasta experiencia jurídica que nos posiciona entre los despachos más respetados de América Latina. Desde 1995, hemos combinado conocimiento técnico, innovación y un profundo entendimiento de las complejidades del Derecho, atendiendo a clientes nacionales e internacionales en diversas áreas.</p>
 
         <div className="flex flex-col gap-4 md:flex-row ">
 

@@ -39,7 +39,7 @@ const Experience = () => {
 
             </div>
 
-            <div className="flex flex-col gap-5 md:flex-row md:gap-0">
+            <div className="flex flex-col gap-5 md:flex-row md:gap-0 items-center">
 
                 {/* CARD */}
                 <div className="bg-[#f6f6f6] mx-5 py-5 px-5 rounded">

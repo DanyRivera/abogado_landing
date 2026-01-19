@@ -5,7 +5,7 @@ const Services = () => {
     return (
         <section className="md:flex md:justify-center md:items-center md:gap-20 ">
             <div>
-                <div className="flex mx-12 ">
+                <div className="flex justify-center ">
                     <div className="flex flex-col gap-1">
                         <h2 className="text-5xl text-secondary font-bold md:text-7xl">Servicios</h2>
                         <p className="text-5xl text-primary font-bold md:text-7xl">y Areas de</p>

@@ -22,7 +22,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='border-t border-tertiary'>
-                <p className='text-center text-tertiary py-5 md:py-7 text-sm px-5'>&copy; Grupo Rivera Abogados y Soluciones - Todos los Derechos Reservados</p>
+                <p className='text-center text-tertiary py-7 text-sm px-5'>&copy; Grupo Rivera Abogados y Soluciones - Todos los Derechos Reservados</p>
             </div>
         </footer>
     )

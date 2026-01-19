@@ -11,7 +11,7 @@ const Reviews = () => {
         <section className="md:flex md:justify-center md:mx-20 md:items-center">
             <div className="md:relative">
                 <Image className="w-1/4 ml-4 md:absolute md:-top-38" src={Comilla} width={200} height={200} alt="Comilla" />
-                <h2 className="font-bold text-primary text-4xl text-center mx-10 leading-10 md:text-8xl md:leading-24 md:mx-0 md:ml-38 ">Relatos de Nuestros <span className="text-secondary">Clientes</span></h2>
+                <h2 className="font-bold text-primary text-4xl text-center mx-10 leading-10 md:text-7xl md:leading-18 md:mx-0 md:ml-38 ">Relatos de Nuestros <span className="text-secondary">Clientes</span></h2>
             </div>
             <div className="my-10 flex flex-col gap-1 md:w-10/12">
                 <div className="flex justify-center gap-2 items-center ">

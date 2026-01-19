@@ -4,6 +4,7 @@ import Experience from "./components/Experience";
 import Abogados from "./components/Abogados";
 import Services from "./components/Services";
 import Reviews from "./components/Reviews";
+import Cita from "./components/Cita";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Abogados />
       <Services />
       <Reviews />
+      <Cita />
     </>
   );
 }

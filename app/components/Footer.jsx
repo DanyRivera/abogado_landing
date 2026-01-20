@@ -1,5 +1,8 @@
+'use client'
+
 import Image from 'next/image'
 import LogoIcon from '../../public/logo-abogado.svg';
+import { Link } from 'react-scroll';
 
 const Footer = () => {
     return (
@@ -14,10 +17,10 @@ const Footer = () => {
                     <p className='font-semibold text-lg uppercase text-tertiary mb-4 md:mb-0'>Menu</p>
 
                     <ul className='text-tertiary grid grid-cols-2 justify-center items-center gap-3 md:flex text-sm md:text-base'>
-                        <li>Nosotros</li>
-                        <li>Casos</li>
-                        <li>Servicios</li>
-                        <li>Contacto</li>
+                        <Link className="cursor-pointer" to="about" smooth={true} offset={-50} duration={2000}>Nosotros</Link>
+                        <Link className="cursor-pointer" to="services" smooth={true} offset={-50} duration={2000}>Servicios</Link>
+                        <Link className="cursor-pointer" to="abogados" smooth={true} offset={-50} duration={2000}>Abogados</Link>
+                        <Link className="cursor-pointer" to="contact" smooth={true} offset={-50} duration={2000}>Contacto</Link>
                     </ul>
                 </div>
             </div>

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from 'next/image'
+import { motion } from "motion/react"
 import LogoIcon from '../../public/logo-abogado.svg';
 
 const Hero = () => {
@@ -120,15 +121,16 @@ const Hero = () => {
                     </nav>
                     <section className='flex h-screen items-center mx-5 md:mx-20 md:w-1/2 md:pb-34'>
                         <div className='flex flex-col gap-3 '>
-                            <h1 className='text-tertiary font-bold text-4xl uppercase leading-10 md:text-6xl md:leading-15'>Grupo Dany Rivera <br /> <span className='text-secondary font-bold'>Asesoría Legal y Soluciones Jurídicas</span></h1>
+                            <motion.h1 initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.8}}  className='text-tertiary font-bold text-4xl uppercase leading-10 md:text-6xl md:leading-15'>Grupo Dany Rivera <br /> <span className='text-secondary font-bold'>Asesoría Legal y Soluciones Jurídicas</span></motion.h1>
                             <div className='flex flex-col gap-10'>
-                                <p className='text-tertiary text-sm md:text-base w-7/8 md:w-2/3'>
+                                <motion.p initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.8}} className='text-tertiary text-sm md:text-base w-7/8 md:w-2/3'>
                                     En Grupo Dany Rivera, nos dedicamos a proteger tus intereses con soluciones jurídicas efectivas y personalizadas. Contamos con un equipo de profesionales del derecho altamente calificados, comprometidos con brindarte una atención cercana, ágil y eficiente, adaptada a tus necesidades.
-                                </p>
+                                </motion.p>
                                 <div>
-                                    <button
+                                    <motion.button
+                                        initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 0.8}}
                                         className='bg-secondary text-tertiary py-4 px-7 font-bold  uppercase text-sm tracking-wider rounded-full'
-                                    >Contactanos</button>
+                                    >Contactanos</motion.button>
                                 </div>
                             </div>
                         </div>

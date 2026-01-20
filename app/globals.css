@@ -11,6 +11,10 @@
   color: #383838;
 } */
 
+body {
+  overflow-x: hidden !important;
+}
+
 .hero {
   background-image: url(../public/hero.jpg);
   background-position: center top;

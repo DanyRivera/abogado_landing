@@ -8,7 +8,7 @@ import Youtube from '@/public/yt.svg';
 const Card = ({ name, work, image }) => {
     return (
         <div>
-            <Image className="rounded-t-xl h-50 md:h-60" src={`/${image}.jpg`} width={500} height={500} alt="Persona1" />
+            <Image className="rounded-t-xl h-50 md:h-54" src={`/${image}.jpg`} width={500} height={500} alt="Persona1" />
             <div className='bg-primary rounded-b-xl p-5 flex flex-col gap-5'>
                 <div className='flex justify-between items-center'>
                     <div>

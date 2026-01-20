@@ -5,15 +5,17 @@ import People2 from "@/public/people2.webp";
 import People3 from "@/public/people3.webp";
 import People4 from "@/public/people4.webp";
 import People5 from "@/public/people5.webp";
+import * as motion from "motion/react-client"
+
 
 const Reviews = () => {
     return (
         <section className="md:flex md:justify-center md:mx-20 md:items-center">
-            <div className="md:relative">
+            <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.8}} className="md:relative">
                 <Image className="w-1/4 ml-4 md:absolute md:-top-38" src={Comilla} width={200} height={200} alt="Comilla" />
                 <h2 className="font-bold text-primary text-4xl text-center mx-10 leading-10 md:text-7xl md:leading-18 md:mx-0 md:ml-38 ">Relatos de Nuestros <span className="text-secondary">Clientes</span></h2>
-            </div>
-            <div className="my-10 flex flex-col gap-1 md:w-10/12">
+            </motion.div>
+            <motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 0.8}} className="my-10 flex flex-col gap-1 md:w-10/12">
                 <div className="flex justify-center gap-2 items-center ">
                     <Image className="rounded-full md:w-24" src={People1} width={50} height={50} alt="Comilla" />
                     <Image className="rounded-full md:w-24" src={People2} width={50} height={50} alt="Comilla" />
@@ -35,7 +37,7 @@ const Reviews = () => {
                 <p className="text-center mx-5 md:text-xl md:w-1/2 md:mx-auto">
                     Más que un despacho de abogados, encontré en Grupo Rivera un verdadero aliado. Me brindaron orientación en un momento difícil con empatía y profesionalismo, siempre buscando la mejor solución para mi caso.
                 </p>
-            </div>
+            </motion.div>
         </section>
     )
 }
